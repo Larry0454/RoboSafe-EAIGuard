@@ -68,8 +68,11 @@
 
   <title>RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic | ICLR 2026 ES-Reasoning</title>
 
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
+
+  <link rel="icon" type="image/png" href="static/images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/icon.png">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -372,7 +375,7 @@
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered section-title">Method Overview</h2>
         <div class="content has-text-centered">
-          <img class="overview-image" src="static/images/robosafe_framework_tpami.png" alt="Overall runtime guardrail framework of RoboSafe" loading="lazy">
+          <img class="overview-image" src="static/images/framework.png" alt="Overall guardrail framework of RoboSafe" loading="lazy">
           <p style="margin-top:1rem;">
             RoboSafe treats the embodied agent as a black box and performs runtime intervention based only on the instruction, multimodal observation, and proposed action. The guardrail returns <strong>PERMIT</strong>, <strong>BLOCK</strong>, or <strong>REPLAN</strong> to prevent hazardous execution.
           </p>
