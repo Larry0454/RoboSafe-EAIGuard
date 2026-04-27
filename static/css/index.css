@@ -751,3 +751,243 @@ a:focus {
 
 
 
+
+/* === Code-as-Monitor reference-style pass v2 ===
+   Overrides template inline styles. Scope: typography, spacing, simple layout. */
+:root {
+  --cam-blue: #3273dc;
+  --cam-author-blue: #1e9bff;
+  --cam-orange: #e6a400;
+  --cam-text: #3a3a3a;
+  --cam-muted: #555555;
+  --cam-light: #f5f5f5;
+}
+html,
+body {
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  color: var(--cam-text) !important;
+  background: #ffffff !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.scroll-to-top { display: none !important; }
+main > section.hero:first-of-type,
+main > section.hero:first-of-type .hero-body,
+.hero,
+.hero.is-light {
+  background: #ffffff !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+main > section.hero:first-of-type .hero-body {
+  padding: 4.05rem 1.5rem 3.7rem !important;
+}
+.container.is-max-desktop { max-width: 1120px !important; }
+.publication-title {
+  max-width: 1060px !important;
+  margin: 0 auto 1.32rem !important;
+  color: #333333 !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 2.95rem !important;
+  font-weight: 800 !important;
+  line-height: 1.10 !important;
+  letter-spacing: -0.045em !important;
+}
+.venue-title {
+  display: block !important;
+  color: var(--cam-blue) !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 1.72rem !important;
+  font-weight: 800 !important;
+  line-height: 1.18 !important;
+  margin: 0.9rem auto 1.38rem !important;
+  letter-spacing: -0.02em !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.publication-authors {
+  max-width: 1060px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 0 !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  line-height: 1.40 !important;
+}
+.publication-authors .author-block {
+  display: inline-block !important;
+  margin: 0 0.09rem 0.16rem !important;
+}
+.authors-row {
+  color: var(--cam-author-blue) !important;
+  font-size: 1.08rem !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+}
+.affiliations-row {
+  max-width: 1040px !important;
+  color: var(--cam-muted) !important;
+  font-size: 1.02rem !important;
+  font-weight: 400 !important;
+  line-height: 1.33 !important;
+  margin-top: 0.48rem !important;
+}
+.corresponding-row {
+  color: var(--cam-muted) !important;
+  font-size: 0.94rem !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  margin-top: 0.75rem !important;
+}
+.authors-row sup,
+.affiliations-row sup,
+.corresponding-row sup {
+  font-size: 0.70em !important;
+  top: -0.42em !important;
+}
+.tagline { display: none !important; }
+.publication-links { margin-top: 1.45rem !important; }
+.publication-links .link-block {
+  display: inline-block !important;
+  margin: 0 0.20rem !important;
+}
+.publication-links .button,
+.publication-links .button.is-dark,
+.publication-links .button.is-rounded {
+  height: auto !important;
+  min-height: 0 !important;
+  border-radius: 999px !important;
+  padding: 0.58rem 1.03rem !important;
+  border: 0 !important;
+  background: #333333 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 1.02rem !important;
+  font-weight: 500 !important;
+  line-height: 1.22 !important;
+  transform: none !important;
+}
+.publication-links .button:hover {
+  background: #222222 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  transform: translateY(-1px) !important;
+}
+#highlights.section {
+  padding: 4.2rem 1.5rem 4.0rem !important;
+  background: #ffffff !important;
+}
+.highlight-title {
+  margin: 0 auto 2.0rem !important;
+  color: #333333 !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 2.18rem !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.04em !important;
+}
+.highlight-icon {
+  color: var(--cam-orange) !important;
+  margin-right: 0.18rem !important;
+}
+.highlights-list {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: var(--cam-text) !important;
+}
+.highlights-list ul {
+  margin-left: 1.34rem !important;
+  margin-top: 0 !important;
+}
+.highlights-list li {
+  color: var(--cam-text) !important;
+  font-size: 1.12rem !important;
+  font-weight: 500 !important;
+  line-height: 1.72 !important;
+  margin-bottom: 1.20rem !important;
+}
+.highlight-orange {
+  color: var(--cam-orange) !important;
+  font-weight: 800 !important;
+}
+.abstract-section,
+section.abstract-section,
+section.section.abstract-section,
+section.section.hero.is-light.abstract-section {
+  background: var(--cam-light) !important;
+  border: 0 !important;
+}
+.abstract-section.section,
+section.abstract-section.section {
+  padding: 4.45rem 1.5rem 4.75rem !important;
+}
+.abstract-section .column.is-four-fifths {
+  width: 82% !important;
+  max-width: 880px !important;
+}
+.title.is-3,
+.section-title,
+.abstract-section .section-title {
+  color: #333333 !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 2.15rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.04em !important;
+  margin-bottom: 2.05rem !important;
+  padding-bottom: 0 !important;
+}
+.title.is-3::after,
+.section-title::after,
+.abstract-section .section-title::after {
+  content: none !important;
+  display: none !important;
+}
+.abstract-section .content,
+.abstract-section .content.has-text-justified {
+  max-width: 860px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: var(--cam-muted) !important;
+  font-family: "Noto Sans", "Google Sans", Arial, sans-serif !important;
+  font-size: 1.16rem !important;
+  font-weight: 400 !important;
+  line-height: 1.62 !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  word-spacing: normal !important;
+}
+.abstract-section .content p { margin-bottom: 0.92rem !important; }
+.demo-card,
+.result-card,
+.method-card,
+.teaser-image,
+.overview-image,
+.demo-image,
+.publication-banner,
+.publication-video { box-shadow: none !important; }
+.footer { background: #ffffff !important; }
+@media screen and (max-width: 768px) {
+  main > section.hero:first-of-type .hero-body { padding: 2.6rem 1rem 2.55rem !important; }
+  .publication-title {
+    font-size: 2.18rem !important;
+    line-height: 1.12 !important;
+    letter-spacing: -0.035em !important;
+  }
+  .venue-title { font-size: 1.35rem !important; }
+  .authors-row { font-size: 0.96rem !important; }
+  .affiliations-row { font-size: 0.88rem !important; line-height: 1.42 !important; }
+  .corresponding-row { font-size: 0.82rem !important; }
+  #highlights.section { padding-top: 3.0rem !important; padding-bottom: 3.0rem !important; }
+  .highlight-title,
+  .title.is-3,
+  .section-title { font-size: 1.80rem !important; letter-spacing: -0.03em !important; }
+  .highlights-list li { font-size: 1rem !important; line-height: 1.65 !important; }
+  .abstract-section .column.is-four-fifths { width: 100% !important; }
+  .abstract-section .content,
+  .abstract-section .content.has-text-justified { font-size: 1rem !important; line-height: 1.65 !important; }
+}
